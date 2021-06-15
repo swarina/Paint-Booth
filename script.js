@@ -121,7 +121,6 @@ function storeDrawn(x, y, size, color, erase) {
     color,
     erase,
   };
-  console.log(line);
   drawnArray.push(line);
 }
 
@@ -188,8 +187,8 @@ loadStorageBtn.addEventListener('click', () => {
     setTimeout(switchToBrush, 1500);
   } else {
     activeToolEl.textContent = 'No Canvas Found';
+    setTimeout(switchToBrush, 1500);
   }
-
 });
 
 // Clear Local Storage
